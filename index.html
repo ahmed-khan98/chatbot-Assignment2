@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <title>Assingment 2</title>
+</head>
+
+<body>
+    <h1>Saylani Chatbot Javascript Assignment</h1>
+    <h3>Question : 1</h3>
+    <p>Today is :<span id="day"></span></p>
+    <p>current time :<span id="time"></span></p>
+    <hr>
+    <h3>Question 2</h3>
+    <p>date : <span id="q2date"></span></p>
+    <hr>
+    <h2>Question 3</h2>
+    <h3>Calculate the Area of Triangle</h3>
+    <input type="number" id="1side" placeholder="enter 1 side  value">
+    <input type="number" id="2side" placeholder="enter 2 side  value">
+    <input type="number" id="3side" placeholder="enter 3 side value">
+    <p>The Area of Triangle is : <span id="areacal"></span></p>
+    <br>
+    <button onclick="area()">calculate</button>
+    <hr>
+    <h2>Question 4 </h2>
+    <h3 id="saylani"></h3>
+    <hr>
+    <h2>Question 5</h2>
+    <h2>check Leap year</h2>
+    <input type="number" id="leap" placeholder="Enter a year">
+    <button onclick="check()">Check</button>
+    <p id="leap_result"></p>
+    <hr>
+
+    <h2>Question 6</h2>
+
+    <ul id="ul"></ul>
+    <hr>
+    <h2>Question 7</h2>
+    <h3>Guess Number</h3>
+    <hr>
+    <h2>Question 8</h2>
+    <h3 id="august"></h3>
+    <hr>
+    
+
+    <h2>Question 9</h2>
+    <h3>Multiply and Divide Two Number </h3>
+    <input type="number" id="fnum" placeholder="Enter a first Number">
+    <input type="number" id="snum" placeholder="Enter a Second Number">
+    <p>Multiply of two number is :<span id="multi"></span></p>
+    <p>Divide of two number is :<span id="divide"></span></p>
+    <button onclick="muldiv()">Submit</button>
+    <hr>
+    <h2>Question 10</h2>
+    <h3>Convert temperatu from celsius and farhenheit</h3>
+    <input type="number" id="temp" placeholder="Enter a temp in celcius">
+    <button onclick="convert()">Convert </button>
+    <p id ="celcius"></p>
+    <input type="number" id="temp1" placeholder="Enter a temp in farhenheit">
+    <button onclick="convert1()">Convert </button>
+    <p id="farhenheit"></p>
+    <hr>
+    <h2>Question 11</h2>
+    <input type="number" id="sum1" placeholder="Enter a first num">
+    <input type="number" id="sum2" placeholder="Enter a second num">
+    <button onclick="sum()">Sum </button>
+    <p id="sumpara"></p>
+    <hr>
+
+
+
+
+    <h2>Question 12</h2>
+    <h3>Given number within 20 of 100 or 400.</h3>
+    <input type="number" id="number">
+    <p id="givenNumber"></p>
+    <button onclick="checknum()">Submit</button>
+    <hr>
+    <h2>Question 13</h2>
+    <h3>largest number</h3>
+    <input type="number" id="num1" placeholder="Enter a first Number">
+    <input type="number" id="num2" placeholder="Enter a Second Number">
+    <input type="number" id="num3" placeholder="Enter a Third Number">
+    <p>largest Number is :<span id="largestNumber"></span></p>
+    <button onclick="largest()">Check</button>
+    <hr>
+    <h2>Question 14</h2>
+    <h3>Capitalize First Letter</h3>
+    <input type="text" id="string" placeholder="Enter a string value">
+    <p id="capital"></p>
+    <button onclick="capital()">Capitalize</button>
+    <hr>
+    <h2>Question 15</h2>
+    <h3> given days to hours and minutes. i.e: 1 day equals 24hr</h3>
+    <input type="number" id="Daynum" placeholder="Enter a day">
+    <p id="hour"></p>
+    <button onclick="hourfunc()">Convert</button>
+    <hr>
+    <h2>Question 16</h2>
+    <h3> Reverse the elements of a given array</h3>
+    <input type="text" id="1" placeholder="Enter a 1 element">
+    <input type="text" id="2" placeholder="Enter a 2 element">
+    <input type="text" id="3" placeholder="Enter a 3 element">
+    <input type="text" id="4" placeholder="Enter a 4 element">
+    <button onclick="reverse()">Reverse</button>
+    <p id="arrpara"></p>
+    <hr>
+    <h2>Question 17</h2>
+    <h3>find the larger value between the first or last
+        and set all the other elements with that value. Display the new array</h3>
+    <input type="number" id="5" placeholder="Enter a 1 element">
+    <input type="number" id="6" placeholder="Enter a 2 element">
+    <input type="number" id="7" placeholder="Enter a 3 element">
+
+    <button onclick="larg()">largest number</button>
+    <p id="largpara"></p>
+    <hr>
+    <h2>Question 18</h2>
+    <h3>kth greatest element of a given array of Numbers</h3>
+    <input type="number" id="8" placeholder="Enter a 1 element">
+    <input type="number" id="9" placeholder="Enter a 2 element">
+    <input type="number" id="10" placeholder="Enter a 3 element">
+
+    <button onclick="greater()">Kth greater</button>
+    <p id="greater"></p>
+    <hr>
+    <h2>Question 19</h2>
+    <h3>The number which appears most in a given array of Numbers</h3>
+    <p id="array"></p>
+    <p id="mostappear"></p>
+
+
+
+    <hr>
+    <h2>Question 20</h2>
+    <h3>Replace all the numbers with a specified number of a given array of Numbers</h3>
+    <p id="givenarr"></p>
+    <input type="number" id="targ" placeholder="Enter a target element">
+    <p>Replace By</p>
+    <input type="number" id="replace" placeholder="Enter a replace element">
+    <button onclick="replace()">Done</button>
+    <p id="reparr"></p>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
